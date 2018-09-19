@@ -1,13 +1,9 @@
-import React, { Component } from "react";
 
-export default class HomePage extends Component {
-    render() {
-        return(
             <div className="home">
                 <div className="home__banner home__banner--bg">
                     <div className="overlay"></div>
                     <h2>Frees i and Simple <span>invoicings</span> for freelancers and businesses.</h2>
-                    <Link to="/QuickBill/dashboard" className="solid-btn">Create Invoice</Link>
+                    <Link to="https://sammyprince.github.io/QuickBill/QuickBill/dashboard" className="solid-btn">Create Invoice</Link>
                     <h4>No signup required</h4>
                 </div>
                 <div className="home__banner home__banner--footer">
