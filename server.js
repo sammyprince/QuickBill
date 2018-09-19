@@ -1,10 +1,10 @@
 const path = require("https://sammyprince.github.io/QuickBill");
-const express = require("express");
+const express = require("https://sammyprince.github.io/QuickBill");
 
 const app = express();
 
-app.use('https://sammyprince.github.io/QuickBill/dist', express.static(__dirname + '/dist'));
-app.use('https://sammyprince.github.io/QuickBill/assets', express.static(__dirname + '/assets'));
+app.use('https://sammyprince.github.io/QuickBill/dist', 'https://sammyprince.github.io/QuickBill/dist'));
+app.use('https://sammyprince.github.io/QuickBill/assets''https://sammyprince.github.io/QuickBill/assets'));
 
 app.get('*', function response(req, res) {
     res.sendFile(path.join(__dirname, 'https://sammyprince.github.io/QuickBill/index.html'));
