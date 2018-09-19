@@ -1,8 +1,8 @@
 let CACHE_NAME = 'QuickBill';
 
 let urlsToCache = [
-    './index.html',
-    './404.html',
+    'https://sammyprince.github.io/QuickBill/index.html',
+    'https://sammyprince.github.io/QuickBill/404.html',
     '/assets/css/styles.css',
     '/assets/images/**.*',
     '/dist/index-bundle.js'
