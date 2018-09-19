@@ -10,6 +10,6 @@
   ],
   "name": "QuickBill Web App",
   "short_name": "QuickBill",
-  "start_url": "./?utm_source=web_app_manifest",
+  "start_url": "https://sammyprince.github.io/QuickBill/",
   "theme_color": "#5564f5"
 }
