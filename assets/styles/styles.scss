@@ -1,0 +1,22 @@
+@import "partials/settings/global";
+
+@import "partials/tools/mixins";
+
+@import "partials/generic/bootstrap";
+
+@import "partials/base/base",
+        "partials/base/helper";
+
+@import "../../node_modules/react-dates/css/variables.scss",
+        "../../node_modules/react-dates/css/styles.scss";
+
+@import "partials/components/navbar",
+        "partials/components/home",
+        "partials/components/buttons",
+        "partials/components/dashboard",
+        "partials/components/react-toggle",
+        "partials/components/react-select",
+        "partials/components/sidenav",
+        "partials/components/item",
+        "partials/components/invoice",
+        "partials/components/pdf-preview";

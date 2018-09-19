@@ -1,0 +1,181 @@
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding: 20px 0;
+    height: 100%;
+    width: 280px;
+    background-color: #fff;
+    border-top: 1px solid #f6f6f6;
+    box-shadow: 2px 0px 4px 0 rgba(156,156,156,0.2);
+    color: #555;
+    
+    h4 {
+        margin-left: 40px;
+        margin-right: 40px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    hr {
+        margin: 8px 40px;
+        border: 1px solid #f2f2f2;
+        max-width: 100%;
+        border-top: 0;
+    }
+
+    .full-line {
+        margin: 8px 0;
+    }
+
+    .visiblity-check {
+        display: block;
+    }
+
+    @include element("element") {
+        margin: 2px 40px 0 40px;
+
+        .setting {
+            margin-bottom: 10px;
+
+            span {
+                font-weight: 700;
+                font-size: 13px;
+            }
+
+            > input {
+                width: 100%;
+                margin-top: 10px;
+                border: 1px solid #D2D8DE;
+                border-radius: 2px;
+            }
+
+            > input[type=text] {
+                padding: 6px 10px;
+                font-size: 14px;
+                font-weight: 300;
+                color: #555;
+                letter-spacing: .003em;
+            }
+
+            @include modifier("inline") {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 15px;
+                margin-bottom: 0px;
+            }
+
+            @include modifier("paid") {
+                padding: 0;
+            }
+
+            .Select {
+                max-width: 200px;
+                width: 100%;
+                font-weight: 400;
+                margin: 10px auto;
+                margin-bottom: 0px;
+
+                .Select-input {
+                    height: 32px;
+
+                    &>input {
+                        padding: 0;
+                    }
+                }
+                
+                .Select-placeholder {
+                    line-height: 32px;
+                    font-weight: 400;
+                }
+
+                .Select-control {
+                    height: 32px;
+                    border-radius: 3px;
+                    border-color: #D0D6DC;
+
+                    .Select-value {
+                        line-height: 32px;
+                    }
+                }
+
+                .Select-value-label {
+                    font-weight: 400;
+                }
+            }
+
+            .fa-paper-plane {
+                font-size: 12px;
+            }
+        }
+    }
+    
+    @media screen and (min-width: 961px) and (max-width: 1200px){
+        width: 260px;
+    }
+
+    @media screen and (max-width: 960px) {
+        width: 100%;
+        position: relative;
+        height: auto;
+        margin-bottom: 0;
+
+        .visiblity-check {
+            display: none;
+        }
+
+        @include element ("inline-element") {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @include element ("element") {
+            @include modifier ("select") {
+                margin: 10px 40px 0 40px;
+                width: 100%;
+
+                &:first-child {
+                    margin-right: 20px;
+                }
+
+                &:nth-child(2) {
+                    margin-left: 20px;
+                }
+            }
+
+            .setting {
+                padding-top: 10px;
+
+                span {
+                    font-size: 14px;
+                }
+
+                > input[type=text] {
+                    padding: 10px 10px;
+                }
+
+                .Select {
+                    max-width: 100%;
+
+                    .Select-input {
+                        height: 42px;
+
+                        &> input {
+                            line-height: 42px;
+                        }
+                    }
+                    
+                    .Select-control {
+                        height: 42px;
+
+                        .Select-value {
+                            line-height: 42px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

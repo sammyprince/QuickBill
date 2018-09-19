@@ -1,0 +1,143 @@
+%btn {
+    display: inline-block;
+    min-width: 80px;
+    padding: 4px 18px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    text-align: center;
+    margin: 5px 0;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+}
+
+.solid-btn {
+    @extend %btn;
+
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 999em;
+
+    &:hover, &:focus {
+        color: #fafafa;
+        border-color: #fafafa;
+    }
+
+    @include modifier("rect") {
+        width: 100%;
+        color: #fff;
+        border-radius: 3px;
+        height: 32px;
+        padding: 0;
+        background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+        line-height: 2.2;
+        font-size: 13px;
+        margin-top: 10px;
+
+        &:hover, &:focus {
+            background-image: linear-gradient(-20deg, #b321f9 0%, #21cff7 100%);
+        }
+    }
+
+    @include modifier("new") {
+        background-color: #31D600;
+        border-color: #31D600;
+        color: #fff;
+        border-radius: 3px;
+        margin: 15px 15px 15px 2px;
+        width: 120px;
+
+        &:hover, &:focus {
+            border-color: #30cc02;
+            background-color: #30cc02;
+        }
+
+        @media screen and (max-width: 699px) {
+            margin: 10px auto;
+            width: 180px;
+            letter-spacing: .03em;
+            display: flex;
+            justify-content: center;
+            padding: 18px;
+            font-size: 15px;
+            align-items: center;
+        }
+    }
+
+    @include modifier("save") {
+        &:hover, &:focus {
+            background: #30cc02;
+        }
+    }
+
+    @include modifier("ghost") {
+        width: 100%;
+        border: 1px solid #D0D6DC;
+        color: #fff;
+        border-radius: 3px;
+        height: 32px;
+        padding: 0;
+        background: transparent;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 13px;
+
+        &:hover, &:focus {
+            color: #555;
+            border-color: #D0D6DC;
+        }
+        
+        .ghost-btn {
+            margin: 0;
+            width: 50%;
+            height: 100%;
+            color: #444;
+            border: 0;
+            border-radius: 0;
+            padding: 0;
+            line-height: 2.2;
+            background: #fff;
+
+            &:hover, &:focus {
+                color: #888;
+                border-color: #D0D6DC;
+            }
+
+            &:first-child {
+                border-right: 1px solid #D0D6DC;
+            }
+
+            @include modifier("preview") {
+                width: 100%;
+                padding: 5px;
+                font-size: 16px;
+
+                &:first-child {
+                    border-right: 0;
+                }
+            }
+        }
+    }
+
+    @include modifier("dashboard") {
+        height: 40px;
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        letter-spacing: .01em;
+
+        .ghost-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
