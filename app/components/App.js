@@ -1,6 +1,5 @@
 // @flow
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route} from "react-router-dom";
 
 import NavBar from "./common/NavBar";
 import HomePage from "./home/HomePage";
@@ -13,9 +12,9 @@ export default class App extends Component {
             <Router>
                 <div>
                     <NavBar />
-                    <Route exact path="/QuickBill/" component={HomePage} />
-                    <Route path="/QuickBill/dashboard" component={Dashboard} />
-                    <Route path="/QuickBill/preview" component={Preview}></Route>
+                    <Route exact path="https://sammyprince.github.io/QuickBillQuickBill/" component= />
+                    <Route path="/QuickBill/dashboard" component= />
+                    <Route path="/QuickBill/preview" component=</Route>
                 </div>
             </Router>
         );
