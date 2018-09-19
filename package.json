@@ -10,7 +10,7 @@
     "start-server": "node server.js",
     "build": "webpack -p"
   },
-  "repository": "git@github.com:PunitGr/MakeInvoice.git",
+  "repository": "https://sammyprince.github.io/QuickBill/",
   "author": "PunitGr <groove679@gmail.com>",
   "license": "MIT",
   "devDependencies": {
