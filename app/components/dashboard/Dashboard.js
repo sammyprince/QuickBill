@@ -2,8 +2,6 @@
 import React, { Component } from "react";
 import SideNav from "./SideNav";
 import Invoice from "./Invoice";
-import { Link } from "react-router-dom";
-import { connect } from "react-redux";
 
 import {
     setDownloadStatus
